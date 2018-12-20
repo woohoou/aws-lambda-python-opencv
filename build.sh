@@ -2,7 +2,7 @@
 
 # Setting up build env
 sudo yum update -y
-sudo yum install -y git cmake gcc-c++ gcc python-devel chrpath
+sudo yum install -y git cmake gcc-c++ gcc python36u python36u-libs python36u-devel python36u-pip chrpath
 mkdir -p lambda-package/cv2 build/numpy
 
 # Build numpy
