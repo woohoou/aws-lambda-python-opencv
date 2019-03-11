@@ -21,7 +21,7 @@ cp -rf build/numpy/lib64/python3.6/site-packages/numpy lambda-package/numpy
 	cd opencv
 	git checkout 3.4.0
 	mkdir build && cd build
-	cmake
+	cmake \
 		-D CMAKE_BUILD_TYPE=RELEASE \
 		-D WITH_TBB=ON \
 		-D WITH_IPP=ON \
