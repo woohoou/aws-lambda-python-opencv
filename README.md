@@ -29,7 +29,7 @@ In the EC2 console, launch a new instance with:
 ```bash
 #!/bin/bash
 yum update -y
-yum install -y git cmake gcc-c++ gcc python37u python37u-libs python37u-devel python37u-pip chrpath
+yum install -y git cmake gcc-c++ gcc python36u python36u-libs python36u-devel python36u-pip chrpath
 
 cd /tmp
 wget https://github.com/woohoou/aws-lambda-python-opencv/archive/master.zip
