@@ -16,7 +16,7 @@ This is a simple script that builds a deployment package including OpenCV compat
 
 ## Module building
 ### Option 1: with an existing instance
-- Download the repo `wget https://github.com/woohoou/aws-lambda-python-opencv/aws-lambda-python-opencv/archive/master.zip`
+- Download the repo `wget https://github.com/woohoou/aws-lambda-python-opencv/archive/master.zip`
 - Unzip the archive `unzip master.zip`
 - Launch the script `cd aws-lambda-python-opencv-master && ./build.sh`
 
