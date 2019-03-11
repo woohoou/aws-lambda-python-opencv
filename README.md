@@ -10,13 +10,13 @@ This is a simple script that builds a deployment package including OpenCV compat
 
 - Build duration: ~20 min on T2.micro / ~15 min on C4.2xlarge
 - Package size without haar cascades included: 26MB
-- OpenCV 3.2 by default but may work with newer
+- OpenCV 3.4 by default but may work with newer
 
 **Needs to be built on an Amazon Linux instance.**
 
 ## Module building
 ### Option 1: with an existing instance
-- Download the repo `wget https://github.com/aeddi/aws-lambda-python-opencv/archive/master.zip`
+- Download the repo `wget https://github.com/woohoou/aws-lambda-python-opencv/aws-lambda-python-opencv/archive/master.zip`
 - Unzip the archive `unzip master.zip`
 - Launch the script `cd aws-lambda-python-opencv-master && ./build.sh`
 
@@ -29,10 +29,10 @@ In the EC2 console, launch a new instance with:
 ```bash
 #!/bin/bash
 yum update -y
-yum install -y git cmake gcc-c++ gcc python-devel chrpath
+yum install -y git cmake gcc-c++ gcc python37u python37u-libs python37u-devel python37u-pip chrpath
 
 cd /tmp
-wget https://github.com/aeddi/aws-lambda-python-opencv/archive/master.zip
+wget https://github.com/woohoou/aws-lambda-python-opencv/archive/master.zip
 unzip master.zip
 chmod 777 aws-lambda-python-opencv-master
 cd aws-lambda-python-opencv-master
