@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setting up build env
-sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+# sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum update -y
 sudo yum install -y git cmake gcc-c++ gcc python3 python37 python3-libs python3-devel python3-pip chrpath
 mkdir -p lambda-package/cv2 build/numpy
